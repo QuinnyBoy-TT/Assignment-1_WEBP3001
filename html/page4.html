@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat+Alternates:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <meta charset="utf-8">
+    <title>Project</title>
+</head>
+<body>
+    <div class="menu-container">
+        <nav>
+            <a href="/index.html">Homepage</a>
+            <a href="/html/toc.html">Table of Content</a>
+            <a href="javascript:history.back()">Previous Page</a>
+            <a href="/html/page5.html">Next Page </a>
+        </nav>
+    </div>
+
+    <div class="menu-container">
+        <nav>   
+            <a href="/html/page1.html">Page 1</a>
+            <a href="/html/page2.html">Page 2</a>
+            <a href="/html/page3.html">Page 3</a>
+            <a href="/html/page4.html">Page 4</a>
+            <a href="/html/page5.html">Page 5</a>
+        </nav>
+    </div>
+
+
+<p>Light Mode
+    <input type="checkbox" id="check-box" value="1">
+</p>
+
+<h1>Page 4</h1>
+<div id="test" class="background-overlay" >
+<h3>Architectural Goals and Constraints</h3>
+<section id="server-side">
+<h3>Server Side</h3>
+<p>Amanti De Cafe would be hosted on https://www.pythonanywhere.com/ this is a python-based web server. Run on Linux platform whilst having a connection to MySQL database. As it is a web-based application. Communication to clients has to comply with HTTP, TCP/IP communication protocols standards.</p>
+</section>
+
+<section id="client-side">
+<h3>Client Side</h3>
+<p>Persons would be able to access the web-based application primarily online but there are future plans to expand that into an offline/online mobile application. Integration with all the web browser features can occur due to the JavaScript involved. Both clients and staff members can access Amanti Del Caffe online as it is not limited to any internal networks. Persons who wish to access the web application must use an update and compatible browser such as Google Chrome, Firefox and Safari/Edge.</p>
+</section>
+
+
+<section id="security">
+<h3>Security</h3>
+<p>Limited users will have access to administrative functions Django framework has built-in security for CSRF cross site request forgery protection, by checking for a secret in each POST request. This ensures that a malicious user cannot “replay” a form POST to your website and have another logged in user unwittingly submit that form. Django built in framework security also protects against SQL injections since their queries are constructed using query parameterization. A query’s SQL code is defined separately from the query’s parameters. Form validation was also implemented to the majority of the insertion forms to limit the errors and inaccuracy.</p>
+</section>
+
+<section id="persistence">
+<h3>Persistence</h3>
+<p>Data persistence would be addressed by using a relational database which is a type of database that stores and provides access to data points that are related to one another. Relational databases are based on the relational model, an intuitive, straightforward way of representing data in tables. Measures to maintain ACID () in Django is implemented in Django’s transaction. Atomic, this grants us the ability to write code blocks where database operations are atomic. This means that Django guarantees us that one of two things will happen: or all operations are executed, or none of them are. One important thing to notice about transaction. Atomic is that the auto-commit is disabled because the commit will be called after finishing the whole block. </p>
+</section>
+
+
+<section id="reliability">
+<h3>Reliability/Availability</h3>
+<p>Server available anywhere, hosted on a cloud service. Django has a robust fault tolerance and error handling framework, Django is python-based, and python is also used in cutting-edge tech. Several companies like Google use Python extensively in their software stacks</p>
+</section>
+
+<section id="performance">
+<h3>Performance</h3>
+<p>It was anticipated that the system would respond to every response and send a specific request based on the fact that web server response script queries are normally 10 seconds below the load time. The web server hosting the application has 24/7 support and dodo’s security; the code is stable and robust enough to handle any attempt at malicious attacks or requests forgery. This was developed to help developers get an application completed as quickly as possible. From concept to development to release, Django helps make it cost-effective as well as successful. This makes it a perfect solution for developers who concentrate primarily on deadlines</p>
+</section>
+
+<section id="reuse">
+<h3>Portability and Reuse</h3>
+<p>Web and cloud base mean the most portability and can be used on various platforms. Adapting to a modern operating system is less costly than writing from scratch. Software is modular and built within one system so that modules can be easier to add, remove and reuse. Data cohesion modules are ideally suited for reuse and include data and the behavior on the data</p>
+</section>
+<br>
+
+</div>
+<div class="footer">
+    <p>Assignment 1   |   Course Code: WEBP3001   |   Course Name: Web Programming</p>
+    <p>Student ID: 78218  |   Student Name: Quinn Sambrano</p>
+  </div>
+  
+  <script src="/js/script.js"></script>
+  
+</body>
+
+
+
+</html>

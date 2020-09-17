@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat+Alternates:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <meta charset="utf-8">
+    <title>Project</title>
+</head>
+<body>
+    <div class="menu-container">
+        <nav>
+            <a href="/index.html">Homepage</a>
+            <a href="/html/toc.html">Table of Content</a>
+            <a href="javascript:history.back()">Previous Page</a>
+            <a href="/html/page4.html">Next Page </a>
+        </nav>
+    </div>
+
+    <div class="menu-container">
+        <nav>   
+            <a href="/html/page1.html">Page 1</a>
+            <a href="/html/page2.html">Page 2</a>
+            <a href="/html/page3.html">Page 3</a>
+            <a href="/html/page4.html">Page 4</a>
+            <a href="/html/page5.html">Page 5</a>
+        </nav>
+    </div>
+
+
+<p>Light Mode
+    <input type="checkbox" id="check-box" value="1">
+</p>
+
+<h1>Page 3</h1>
+<div id="test" class="background-overlay">
+<section id="logical-view">
+<h3>Logical View</h3>
+<p>Functional Requirements in this application are ability to provide administrative authority to employees and other information Authentication for customers who purchase products Authentication for select employees who handle the company aspect. Perform SCRUD (Search Create Retrieve Update and Delete {archive}) on Customer Orders, Inventory Management, Staff Schedule Management, Staff Information management, keeping track of records monthly and generating excel spreadsheets, Creating an E-Commerce aspect of the web application for the advertisement and business side of the project. In this application Subsystems can be described as a three-tier layered system. These systems are:</p>
+<ol>
+    <li>User management subsystem</li>
+    <li>Staff Management subsystem</li>
+    <li>Advertisement management subsystem</li>
+</ol>
+<p>These layers play a very important role amongst one another, both user and advertisement management subsystem can be managed by the staff management subsystem but not the other way around.</p>
+</section>
+
+
+<section id="process-view">
+<h3>Process  View</h3>
+<p>Non-Functional Requirements in this application are Scalability which would be considered adding in more e-commerce as well as a mobile and desktop application that can coexist with the Django and Python framework. Supportability which are the system needs to be cost-effective to be maintained for a minimal cost, majority of the structure and modules were created within a framework as to reduce the cost and time it takes to develop a product. Reliability in terms of users have to trust the system and even after using it for a long time. They have to trust the fact that the system has a good fault tolerance and can rebound from any potential fault points or failure. Along with Portability as in the choices and flexibility in technology is now a choice because of the decision to make this application a web-based application as well as manage it on the cloud. It also means users and staff are also able to access the application from a mobile or any other preferred platform without compatibility issues. In terms of concurrency and synchronization in this application , this can be very apparent from a technical aspect, when logging in to an authorized account a user is granted a session and this cannot be broken until the user logs out of the system , this session provides access to their instance of record keeping and generating , if this user does any form of data processing there is usually a delay between processing the query and not processing the query as to reduce overlapping data queries. </p>
+</section>
+
+<section id="development-view">
+<h3>Development View</h3>
+<p>As previously touched on in the logical view, the subsystem consists of three layers, this would be described in detail later on in the technical document. By using Django, the modules used in creating these layers can be described by talking about its components, the top layer consist of a URL Patterns. This works by running through each URL pattern, in order, and stops at the first one that matches the requested URL, matching against path info. Once one of the URL patterns matches, Django imports and calls the given view, which is a Python function (or a class-based view).There’s is then a View layer, a view function, or view for short, is a Python function that takes a Web request and returns a Web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image . . . or anything, really. The view itself contains whatever arbitrary logic is necessary to return that response. This code can live anywhere you want, as long as it’s on your Pythonpath.The layers then extend to a Model which is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table. The final part of this is Templates and this document describes Django’s built-in template tags and filters.</p>
+</section>
+
+<section id="physical-view">
+<h3>Physical View</h3>
+<p>Processes are mainly allocated to mainly the server and framework, minimal processing has to be done on the physical device , the way how this application was designed with compatibility , performance ,scalability and maintainability in mind. This being said Django ensures this this web application is not only desktop friendly but also mobile friendly in its operations. Django aids in splitting up the different components into majority of its bulkier processes be handled server side. As explained further into the technical document this framework follows a modified version of a MVC(Model View Controller) it is called  MVT(Model ,View ,Template).Both the View and the Model are handled by the webserver making it easier on hardware. </p>
+</section>
+<br>
+
+</div>
+
+<div class="footer">
+    <p>Assignment 1   |   Course Code: WEBP3001   |   Course Name: Web Programming</p>
+    <p>Student ID: 78218  |   Student Name: Quinn Sambrano</p>
+  </div>
+  
+  <script src="/js/script.js"></script>
+  
+</body>
+
+
+
+</html>
